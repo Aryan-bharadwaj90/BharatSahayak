@@ -1,0 +1,23 @@
+question,language,expected_scheme,retrieved_scheme_ids,hit_at_5,latency_seconds
+Tell me about PM-KISAN,en,PM_KISAN,['PM_KISAN'],1,4.67
+पीएम किसान योजना क्या है?,hi,PM_KISAN,['PM_KISAN'],1,0.015
+What is Ayushman Bharat PM-JAY?,en,AYUSHMAN_BHARAT_PMJAY,['AYUSHMAN_BHARAT_PMJAY'],1,0.015
+आयुष्मान भारत योजना क्या है?,hi,AYUSHMAN_BHARAT_PMJAY,['AYUSHMAN_BHARAT_PMJAY'],1,0.013
+Tell me about PMAY Urban,en,PMAY_URBAN,['PMAY_URBAN'],1,0.012
+प्रधानमंत्री आवास योजना शहरी क्या है?,hi,PMAY_URBAN,['PMAY_URBAN'],1,0.014
+What is PMAY Gramin?,en,PMAY_GRAMIN,['PMAY_GRAMIN'],1,0.014
+प्रधानमंत्री आवास योजना ग्रामीण क्या है?,hi,PMAY_GRAMIN,['PMAY_GRAMIN'],1,0.013
+Explain Jan Dhan Yojana PMJDY,en,PMJDY,['PMJDY'],1,0.012
+जन धन योजना क्या है?,hi,PMJDY,['PMJDY'],1,0.012
+What is Atal Pension Yojana APY?,en,ATAL_PENSION_YOJANA,['ATAL_PENSION_YOJANA'],1,0.014
+अटल पेंशन योजना क्या है?,hi,ATAL_PENSION_YOJANA,['ATAL_PENSION_YOJANA'],1,0.013
+Explain PMJJBY life insurance scheme,en,PMJJBY,['PMJJBY'],1,0.012
+प्रधानमंत्री जीवन ज्योति बीमा योजना क्या है?,hi,PMJJBY,['PMJJBY'],1,0.013
+What is PMSBY accident insurance?,en,PMSBY,['PMSBY'],1,0.013
+प्रधानमंत्री सुरक्षा बीमा योजना क्या है?,hi,PMSBY,['PMSBY'],1,0.013
+Tell me about PM Mudra Yojana,en,PM_MUDRA,['PM_MUDRA'],1,0.014
+प्रधानमंत्री मुद्रा योजना क्या है?,hi,PM_MUDRA,['PM_MUDRA'],1,0.012
+What is PM Ujjwala Yojana?,en,PM_UJJWALA,['PM_UJJWALA'],1,0.014
+प्रधानमंत्री उज्ज्वला योजना क्या है?,hi,PM_UJJWALA,['PM_UJJWALA'],1,0.014
+Explain PM Fasal Bima Yojana,en,PMFBY,['PMFBY'],1,0.013
+प्रधानमंत्री फसल बीमा योजना क्या है?,hi,PMFBY,['PMFBY'],1,0.013

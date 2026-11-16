@@ -1,0 +1,35 @@
+
+[
+  {"question":"Tell me about PM-KISAN","language":"en","expected_scheme":"PM_KISAN"},
+  {"question":"पीएम किसान योजना क्या है?","language":"hi","expected_scheme":"PM_KISAN"},
+
+  {"question":"What is Ayushman Bharat PM-JAY?","language":"en","expected_scheme":"AYUSHMAN_BHARAT_PMJAY"},
+  {"question":"आयुष्मान भारत योजना क्या है?","language":"hi","expected_scheme":"AYUSHMAN_BHARAT_PMJAY"},
+
+  {"question":"Tell me about PMAY Urban","language":"en","expected_scheme":"PMAY_URBAN"},
+  {"question":"प्रधानमंत्री आवास योजना शहरी क्या है?","language":"hi","expected_scheme":"PMAY_URBAN"},
+
+  {"question":"What is PMAY Gramin?","language":"en","expected_scheme":"PMAY_GRAMIN"},
+  {"question":"प्रधानमंत्री आवास योजना ग्रामीण क्या है?","language":"hi","expected_scheme":"PMAY_GRAMIN"},
+
+  {"question":"Explain Jan Dhan Yojana PMJDY","language":"en","expected_scheme":"PMJDY"},
+  {"question":"जन धन योजना क्या है?","language":"hi","expected_scheme":"PMJDY"},
+
+  {"question":"What is Atal Pension Yojana APY?","language":"en","expected_scheme":"ATAL_PENSION_YOJANA"},
+  {"question":"अटल पेंशन योजना क्या है?","language":"hi","expected_scheme":"ATAL_PENSION_YOJANA"},
+
+  {"question":"Explain PMJJBY life insurance scheme","language":"en","expected_scheme":"PMJJBY"},
+  {"question":"प्रधानमंत्री जीवन ज्योति बीमा योजना क्या है?","language":"hi","expected_scheme":"PMJJBY"},
+
+  {"question":"What is PMSBY accident insurance?","language":"en","expected_scheme":"PMSBY"},
+  {"question":"प्रधानमंत्री सुरक्षा बीमा योजना क्या है?","language":"hi","expected_scheme":"PMSBY"},
+
+  {"question":"Tell me about PM Mudra Yojana","language":"en","expected_scheme":"PM_MUDRA"},
+  {"question":"प्रधानमंत्री मुद्रा योजना क्या है?","language":"hi","expected_scheme":"PM_MUDRA"},
+
+  {"question":"What is PM Ujjwala Yojana?","language":"en","expected_scheme":"PM_UJJWALA"},
+  {"question":"प्रधानमंत्री उज्ज्वला योजना क्या है?","language":"hi","expected_scheme":"PM_UJJWALA"},
+
+  {"question":"Explain PM Fasal Bima Yojana","language":"en","expected_scheme":"PMFBY"},
+  {"question":"प्रधानमंत्री फसल बीमा योजना क्या है?","language":"hi","expected_scheme":"PMFBY"}
+]

@@ -1,0 +1,395 @@
+[
+  {
+    "scheme_id": "PM_KISAN",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Agriculture",
+    "description": "Income-support scheme for eligible farmer families. Check current eligibility, exclusions and payment rules on the official portal.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the  official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmkisan.gov.in/",
+    "source_title": "PM-KISAN Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_preliminary_rules_manual_state_verification_required",
+    "pdf_path": "",
+    "aliases": [
+    "PM-KISAN",
+    "PM Kisan",
+    "PMKISAN",
+    "PM Kisan Samman Nidhi",
+    "Pradhan Mantri Kisan Samman Nidhi",
+    "पीएम-किसान",
+    "पीएम किसान",
+    "प्रधानमंत्री किसान सम्मान निधि"
+    ],
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "has_cultivable_land_in_family",
+          "operator": "eq",
+          "value": true,
+          "reason": "The farmer family must own cultivable land recorded by the State/UT."
+        },
+        {
+          "field": "institutional_landholder",
+          "operator": "eq",
+          "value": false,
+          "reason": "Institutional landholders are excluded."
+        },
+        {
+          "field": "constitutional_post_holder_in_family",
+          "operator": "eq",
+          "value": false,
+          "reason": "Families with a current/former constitutional post holder are excluded."
+        },
+        {
+          "field": "minister_or_legislator_or_mayor_or_district_panchayat_chair_in_family",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified current/former elected office holders in the family are excluded."
+        },
+        {
+          "field": "government_employee_or_retired_employee_excluding_group_d_mts",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified serving/retired government and public-sector employees are excluded; stated Group D/MTS exceptions apply."
+        },
+        {
+          "field": "monthly_pension_10000_or_more_excluding_group_d_mts",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified pensioners receiving ₹10,000 or more per month are excluded; stated Group D/MTS exceptions apply."
+        },
+        {
+          "field": "paid_income_tax_in_last_assessment_year",
+          "operator": "eq",
+          "value": false,
+          "reason": "Income-tax payers in the last assessment year are excluded."
+        },
+        {
+          "field": "registered_practising_professional_doctor_engineer_lawyer_ca_architect",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified registered practising professionals are excluded."
+        }
+      ],
+      "notes": "A preliminary screen only. State land records, family composition, category-specific exceptions and official verification determine final status. Do not infer eligibility from land ownership alone."
+    },
+    "eligibility_sources": [
+      "https://pmkisan.gov.in/",
+      "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines%28English%29.pdf"
+    ]
+  },
+  {
+    "scheme_id": "AYUSHMAN_BHARAT_PMJAY",
+    "scheme_name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    "category": "Health",
+    "description": "Government-funded health assurance programme. Verify beneficiary status, covered services and current rules through official channels.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmjay.gov.in/",
+    "source_title": "Ayushman Bharat PM-JAY Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_preliminary_rules_manual_state_verification_required",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "pmjay_beneficiary_status",
+          "operator": "eq",
+          "value": "verified_eligible",
+          "reason": "PM-JAY entitlement is based on the official beneficiary database (SECC 2011 deprivation/occupational criteria, applicable RSBY records and State-specific additions)."
+        }
+      ],
+      "notes": "Do not infer eligibility from income, caste, age or occupation alone. The assistant cannot query the live beneficiary database. If status is not officially verified, return unknown and direct the user to the official beneficiary portal/helpline. No age or family-size restriction applies to a listed beneficiary family."
+    },
+    "eligibility_sources": [
+      "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1778841&lang=2&reg=48",
+      "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/09/202409251770905432.pdf",
+      "https://beneficiary.nha.gov.in/"
+    ]
+  },
+  {
+    "scheme_id": "PMAY_URBAN",
+    "scheme_name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "category": "Housing",
+    "description": "Housing programme for eligible urban households, with component-specific conditions and assistance.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmay-urban.gov.in/",
+    "source_title": "PMAY-Urban Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_preliminary_rules_manual_state_verification_required",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "residence_area",
+          "operator": "eq",
+          "value": "urban",
+          "reason": "PMAY-U 2.0 applies to eligible families living in urban areas."
+        },
+        {
+          "field": "annual_household_income_inr",
+          "operator": "lte",
+          "value": 900000,
+          "reason": "EWS/LIG/MIG income bands extend up to ₹9 lakh annually (subject to State/UT rules)."
+        },
+        {
+          "field": "family_has_pucca_house_anywhere_in_india",
+          "operator": "eq",
+          "value": false,
+          "reason": "The family must not own a pucca house anywhere in India."
+        },
+        {
+          "field": "allotted_house_under_any_government_housing_scheme_in_last_20_years",
+          "operator": "eq",
+          "value": false,
+          "reason": "A beneficiary allotted a house under a Central/State/UT/Local Government housing scheme in the last 20 years is not eligible."
+        },
+        {
+          "field": "previous_pmAY_urban_house_curtailed_after_2023_12_31",
+          "operator": "eq",
+          "value": false,
+          "reason": "Beneficiaries whose PMAY-U houses were curtailed by CSMC after 31 December 2023 are excluded from PMAY-U 2.0."
+        }
+      ],
+      "notes": "The EWS/LIG/MIG thresholds are generally up to ₹3 lakh, ₹3–6 lakh and ₹6–9 lakh respectively; States/UTs may redefine EWS with MoHUA concurrence. This screen does not decide vertical-specific lending, land/title, ULB validation or sanction."
+    },
+    "eligibility_sources": [
+      "https://pmaymis.gov.in/pmaymis2_2024/faq.html",
+      "https://pmay-urban.gov.in/uploads/guidelines/Operational-Guidelines-of-PMAY-U-2.pdf"
+    ]
+  },
+  {
+    "scheme_id": "PMAY_GRAMIN",
+    "scheme_name": "Pradhan Mantri Awaas Yojana - Gramin (PMAY-G)",
+    "category": "Rural Housing",
+    "description": "Rural housing programme for eligible households under current programme selection and eligibility rules.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmayg.dord.gov.in/",
+    "source_title": "PMAY-G Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_preliminary_rules_manual_state_verification_required",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "pmayg_household_in_final_secc_or_awaas_plus_eligible_list",
+          "operator": "eq",
+          "value": true,
+          "reason": "PMAY-G beneficiaries are identified from SECC 2011 housing-deprivation parameters and finalized Awaas+ lists, subject to official verification."
+        }
+      ],
+      "notes": "Do not estimate PMAY-G entitlement from income or rural residence alone. The official finalized list and verification process are decisive; absent confirmation, eligibility remains unknown."
+    },
+    "eligibility_sources": [
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2155680&lang=2&reg=48"
+    ]
+  },
+  {
+    "scheme_id": "PMJDY",
+    "scheme_name": "Pradhan Mantri Jan-Dhan Yojana (PMJDY)",
+    "category": "Financial Inclusion",
+    "description": "Financial-inclusion programme facilitating access to basic banking services.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://www.pmjdy.gov.in/",
+    "source_title": "PMJDY Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "ATAL_PENSION_YOJANA",
+    "scheme_name": "Atal Pension Yojana (APY)",
+    "category": "Pension / Social Security",
+    "description": "Government-backed pension scheme administered through participating banks and post offices. Verify current joining and contribution rules.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://www.jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "PMJJBY",
+    "scheme_name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "Life Insurance",
+    "description": "Renewable one-year life-insurance scheme offered through participating banks/post offices and insurers.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "PMSBY",
+    "scheme_name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "category": "Accident Insurance",
+    "description": "Renewable one-year personal accident insurance scheme offered through participating banks/post offices.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "PM_MUDRA",
+    "scheme_name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "category": "Micro-enterprise Finance",
+    "description": "Credit programme supporting eligible income-generating micro enterprises through participating lending institutions.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://www.mudra.org.in/",
+    "source_title": "MUDRA Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "PM_UJJWALA",
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "LPG / Clean Cooking",
+    "description": "Programme supporting eligible women from specified disadvantaged households to obtain LPG connections, subject to current rules.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmuy.gov.in/",
+    "source_title": "PMUY Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  },
+  {
+    "scheme_id": "PMFBY",
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture / Crop Insurance",
+    "description": "Crop-insurance programme for notified crops, areas and seasons, subject to current operational guidelines.",
+    "benefits": [
+      "See current official scheme guidelines for applicable benefits, limits and conditions."
+    ],
+    "eligibility": [
+      "Verify current scheme-specific eligibility criteria, exclusions and state/component rules from the official source before making an assessment."
+    ],
+    "documents": [
+      "Exact documents depend on the scheme and application route; verify the current official checklist."
+    ],
+    "application_process": [
+      "Follow the application process published on the official portal or by the authorized implementing agency."
+    ],
+    "official_url": "https://pmfby.gov.in/",
+    "source_title": "PMFBY Official Portal",
+    "last_verified": null,
+    "verification_status": "official_portal_link_added_details_require_manual_verification",
+    "pdf_path": ""
+  }
+]

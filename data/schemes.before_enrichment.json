@@ -1,0 +1,604 @@
+[
+  {
+    "scheme_id": "PM_KISAN",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Agriculture",
+    "description": "Central Sector income-support scheme providing financial assistance to eligible landholding farmer families. State and UT authorities verify beneficiary records.",
+    "benefits": [
+      "Eligible farmer families receive Rs. 6,000 per year.",
+      "The amount is paid in three equal instalments of Rs. 2,000 through Direct Benefit Transfer to the beneficiary bank account.",
+      "eKYC is mandatory for registered beneficiaries."
+    ],
+    "eligibility": [
+      "The scheme covers eligible landholding farmer families, defined as husband, wife and minor children.",
+      "Institutional landholders and specified higher-income or office-holder categories are excluded.",
+      "State or UT land records and official beneficiary verification determine entitlement."
+    ],
+    "documents": [
+      "Aadhaar details for identity and eKYC.",
+      "Bank account details for DBT.",
+      "Landholding and farmer records as required by the State or UT.",
+      "Additional documents requested during official verification."
+    ],
+    "application_process": [
+      "Use the New Farmer Registration facility on the PM-KISAN portal or contact the designated State or UT officials or a CSC.",
+      "Complete the required identity and eKYC process.",
+      "Check application and payment status using Know Your Status on the official portal."
+    ],
+    "official_url": "https://pmkisan.gov.in/",
+    "source_title": "PM-KISAN Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PM-KISAN",
+      "PM Kisan",
+      "PMKISAN",
+      "PM Kisan Samman Nidhi",
+      "Pradhan Mantri Kisan Samman Nidhi",
+      "पीएम-किसान",
+      "पीएम किसान",
+      "प्रधानमंत्री किसान सम्मान निधि"
+    ],
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "has_cultivable_land_in_family",
+          "operator": "eq",
+          "value": true,
+          "reason": "The farmer family must own cultivable land recorded by the State/UT."
+        },
+        {
+          "field": "institutional_landholder",
+          "operator": "eq",
+          "value": false,
+          "reason": "Institutional landholders are excluded."
+        },
+        {
+          "field": "constitutional_post_holder_in_family",
+          "operator": "eq",
+          "value": false,
+          "reason": "Families with a current/former constitutional post holder are excluded."
+        },
+        {
+          "field": "minister_or_legislator_or_mayor_or_district_panchayat_chair_in_family",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified current/former elected office holders in the family are excluded."
+        },
+        {
+          "field": "government_employee_or_retired_employee_excluding_group_d_mts",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified serving/retired government and public-sector employees are excluded; stated Group D/MTS exceptions apply."
+        },
+        {
+          "field": "monthly_pension_10000_or_more_excluding_group_d_mts",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified pensioners receiving ₹10,000 or more per month are excluded; stated Group D/MTS exceptions apply."
+        },
+        {
+          "field": "paid_income_tax_in_last_assessment_year",
+          "operator": "eq",
+          "value": false,
+          "reason": "Income-tax payers in the last assessment year are excluded."
+        },
+        {
+          "field": "registered_practising_professional_doctor_engineer_lawyer_ca_architect",
+          "operator": "eq",
+          "value": false,
+          "reason": "Specified registered practising professionals are excluded."
+        }
+      ],
+      "notes": "A preliminary screen only. State land records, family composition, category-specific exceptions and official verification determine final status. Do not infer eligibility from land ownership alone."
+    },
+    "eligibility_sources": [
+      "https://pmkisan.gov.in/",
+      "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines%28English%29.pdf"
+    ]
+  },
+  {
+    "scheme_id": "AYUSHMAN_BHARAT_PMJAY",
+    "scheme_name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+    "category": "Health",
+    "description": "Government-funded health assurance scheme providing cashless secondary and tertiary hospitalisation cover to eligible beneficiary families at empanelled hospitals.",
+    "benefits": [
+      "Health cover up to Rs. 5 lakh per eligible family per year.",
+      "Cashless treatment at empanelled public and private hospitals.",
+      "Covered packages can include hospitalisation, applicable day-care procedures, medicines and pre- and post-hospitalisation expenses under scheme rules.",
+      "Benefits are portable across participating States and Union Territories."
+    ],
+    "eligibility": [
+      "Entitlement is based on the official beneficiary database and applicable State-specific expansion rules.",
+      "A person's eligibility cannot be confirmed from income, occupation, caste or age alone.",
+      "Check beneficiary status through the official NHA beneficiary portal or an authorised channel."
+    ],
+    "documents": [
+      "Ayushman card or beneficiary identification details, where available.",
+      "Aadhaar or another accepted identity document for verification.",
+      "Ration card or family identification details if requested by the State or verification centre."
+    ],
+    "application_process": [
+      "Check beneficiary status at https://beneficiary.nha.gov.in/ or through an authorised Ayushman Mitra or Common Service Centre.",
+      "Complete identity and family verification if listed as an eligible beneficiary.",
+      "Use an empanelled hospital and contact its Ayushman Mitra desk before treatment."
+    ],
+    "official_url": "https://pmjay.gov.in/",
+    "source_title": "Ayushman Bharat PM-JAY Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "pmjay_beneficiary_status",
+          "operator": "eq",
+          "value": "verified_eligible",
+          "reason": "PM-JAY entitlement is based on the official beneficiary database (SECC 2011 deprivation/occupational criteria, applicable RSBY records and State-specific additions)."
+        }
+      ],
+      "notes": "Do not infer eligibility from income, caste, age or occupation alone. The assistant cannot query the live beneficiary database. If status is not officially verified, return unknown and direct the user to the official beneficiary portal/helpline. No age or family-size restriction applies to a listed beneficiary family."
+    },
+    "eligibility_sources": [
+      "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1778841&lang=2&reg=48",
+      "https://cdnbbsr.s3waas.gov.in/s3169779d3852b32ce8b1a1724dbf5217d/uploads/2024/09/202409251770905432.pdf",
+      "https://beneficiary.nha.gov.in/"
+    ],
+    "aliases": [
+      "Ayushman Bharat",
+      "Ayushman Bharat PM-JAY",
+      "Ayushman Bharat PMJAY",
+      "PM-JAY",
+      "PMJAY",
+      "AB PM-JAY",
+      "AB-PMJAY",
+      "आयुष्मान भारत",
+      "आयुष्मान भारत योजना",
+      "प्रधानमंत्री जन आरोग्य योजना",
+      "पीएम जन आरोग्य योजना"
+    ]
+  },
+  {
+    "scheme_id": "PMAY_URBAN",
+    "scheme_name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "category": "Housing",
+    "description": "PMAY-Urban 2.0 supports eligible urban families to construct, purchase or rent affordable housing through four programme verticals.",
+    "benefits": [
+      "The four verticals are Beneficiary Led Construction, Affordable Housing in Partnership, Affordable Rental Housing and Interest Subsidy Scheme.",
+      "Assistance and conditions differ by vertical, beneficiary category and applicable guidelines.",
+      "Eligible applicants should use the official PMAY-U 2.0 portal or State and Urban Local Body channels to identify the applicable benefit."
+    ],
+    "eligibility": [
+      "The household must fall within the applicable EWS, LIG or MIG income category and live in an urban area.",
+      "The family must not own a pucca house anywhere in India, subject to the scheme guidelines.",
+      "A family already allotted a government housing benefit within the preceding 20 years is generally excluded under PMAY-U 2.0 rules.",
+      "Final eligibility depends on the selected vertical and State or Urban Local Body verification."
+    ],
+    "documents": [
+      "Aadhaar details of the applicant and family members.",
+      "Applicant bank account details.",
+      "Income proof or income certificate as required.",
+      "Eligibility undertaking in the prescribed format.",
+      "Land ownership documents for Beneficiary Led Construction applications.",
+      "Caste or category certificate where applicable."
+    ],
+    "application_process": [
+      "Apply through the PMAY-U 2.0 Unified Web Portal, a Common Service Centre or the concerned Urban Local Body or Municipality.",
+      "Select the applicable scheme vertical and complete the eligibility assessment.",
+      "Upload or submit the required documents and undertaking.",
+      "Wait for State, ULB and scheme-authority verification and sanction."
+    ],
+    "official_url": "https://pmay-urban.gov.in/",
+    "source_title": "PMAY-Urban Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "residence_area",
+          "operator": "eq",
+          "value": "urban",
+          "reason": "PMAY-U 2.0 applies to eligible families living in urban areas."
+        },
+        {
+          "field": "annual_household_income_inr",
+          "operator": "lte",
+          "value": 900000,
+          "reason": "EWS/LIG/MIG income bands extend up to ₹9 lakh annually (subject to State/UT rules)."
+        },
+        {
+          "field": "family_has_pucca_house_anywhere_in_india",
+          "operator": "eq",
+          "value": false,
+          "reason": "The family must not own a pucca house anywhere in India."
+        },
+        {
+          "field": "allotted_house_under_any_government_housing_scheme_in_last_20_years",
+          "operator": "eq",
+          "value": false,
+          "reason": "A beneficiary allotted a house under a Central/State/UT/Local Government housing scheme in the last 20 years is not eligible."
+        },
+        {
+          "field": "previous_pmAY_urban_house_curtailed_after_2023_12_31",
+          "operator": "eq",
+          "value": false,
+          "reason": "Beneficiaries whose PMAY-U houses were curtailed by CSMC after 31 December 2023 are excluded from PMAY-U 2.0."
+        }
+      ],
+      "notes": "The EWS/LIG/MIG thresholds are generally up to ₹3 lakh, ₹3–6 lakh and ₹6–9 lakh respectively; States/UTs may redefine EWS with MoHUA concurrence. This screen does not decide vertical-specific lending, land/title, ULB validation or sanction."
+    },
+    "eligibility_sources": [
+      "https://pmaymis.gov.in/pmaymis2_2024/faq.html",
+      "https://pmay-urban.gov.in/uploads/guidelines/Operational-Guidelines-of-PMAY-U-2.pdf"
+    ],
+    "aliases": [
+      "PMAY-U",
+      "PMAY Urban",
+      "PMAY Urban 2.0",
+      "PM Awas Yojana Urban",
+      "Pradhan Mantri Awas Yojana Urban",
+      "प्रधानमंत्री आवास योजना शहरी",
+      "प्रधानमंत्री आवास योजना-शहरी"
+    ]
+  },
+  {
+    "scheme_id": "PMAY_GRAMIN",
+    "scheme_name": "Pradhan Mantri Awaas Yojana - Gramin (PMAY-G)",
+    "category": "Rural Housing",
+    "description": "Rural housing assistance programme for eligible rural households identified through the prescribed deprivation, housing and verification process.",
+    "benefits": [
+      "The standard unit assistance is Rs. 1.20 lakh in plain areas and Rs. 1.30 lakh in specified hilly and difficult areas, subject to current programme rules.",
+      "Eligible beneficiaries may also receive convergence support for sanitation and other basic facilities under applicable programmes.",
+      "Payment is generally released in instalments linked to construction progress and verification."
+    ],
+    "eligibility": [
+      "Beneficiaries are identified through the prescribed SECC and Awaas+ lists and programme exclusion checks.",
+      "Rural residence or low income alone does not establish eligibility.",
+      "The final beneficiary list and verification by the Gram Sabha and competent authorities are decisive."
+    ],
+    "documents": [
+      "Aadhaar or other accepted identity details.",
+      "Bank or post-office account details.",
+      "Household and residence details.",
+      "Land or site details and other records requested during local verification."
+    ],
+    "application_process": [
+      "Check the beneficiary list through the PMAY-G official portal or Gram Panchayat and Block Development Office.",
+      "Contact the Gram Panchayat or Block office if household details require verification.",
+      "Follow the official beneficiary verification and construction-stage process."
+    ],
+    "official_url": "https://pmayg.dord.gov.in/",
+    "source_title": "PMAY-G Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "eligibility_rules": {
+      "logic": "all",
+      "conditions": [
+        {
+          "field": "pmayg_household_in_final_secc_or_awaas_plus_eligible_list",
+          "operator": "eq",
+          "value": true,
+          "reason": "PMAY-G beneficiaries are identified from SECC 2011 housing-deprivation parameters and finalized Awaas+ lists, subject to official verification."
+        }
+      ],
+      "notes": "Do not estimate PMAY-G entitlement from income or rural residence alone. The official finalized list and verification process are decisive; absent confirmation, eligibility remains unknown."
+    },
+    "eligibility_sources": [
+      "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2155680&lang=2&reg=48"
+    ],
+    "aliases": [
+      "PMAY-G",
+      "PMAY Gramin",
+      "PMAY Rural",
+      "PM Awas Yojana Gramin",
+      "Pradhan Mantri Awaas Yojana Gramin",
+      "प्रधानमंत्री आवास योजना ग्रामीण",
+      "प्रधानमंत्री आवास योजना-ग्रामीण"
+    ]
+  },
+  {
+    "scheme_id": "PMJDY",
+    "scheme_name": "Pradhan Mantri Jan-Dhan Yojana (PMJDY)",
+    "category": "Financial Inclusion",
+    "description": "National financial-inclusion mission enabling unbanked individuals to access basic banking, savings, remittance and eligible financial services.",
+    "benefits": [
+      "A basic savings bank deposit account can be opened with no minimum balance requirement.",
+      "The account earns interest according to the bank's applicable rate.",
+      "RuPay debit card is provided to eligible account holders.",
+      "Eligible account holders may receive accident insurance cover linked to the RuPay card; coverage depends on account-opening date and applicable conditions.",
+      "Eligible account holders may access an overdraft facility up to Rs. 10,000, subject to bank assessment and scheme conditions.",
+      "The account can be used for Direct Benefit Transfer."
+    ],
+    "eligibility": [
+      "Individuals who do not have a bank account can approach a participating bank branch or Bank Mitra.",
+      "Applicants must complete the bank's identity and KYC requirements.",
+      "Overdraft and insurance benefits have additional eligibility and usage conditions."
+    ],
+    "documents": [
+      "Aadhaar number or another officially accepted identity document.",
+      "Address details or an accepted address document, as required by the bank.",
+      "A photograph and KYC information.",
+      "Where applicable, a small account may be opened under the permitted simplified KYC procedure."
+    ],
+    "application_process": [
+      "Visit a participating bank branch or Bank Mitra outlet.",
+      "Request a PMJDY basic savings bank deposit account.",
+      "Complete the account-opening and KYC process.",
+      "Ask the bank to explain RuPay card, overdraft and insurance conditions."
+    ],
+    "official_url": "https://www.pmjdy.gov.in/",
+    "source_title": "PMJDY Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMJDY",
+      "Jan Dhan Yojana",
+      "Pradhan Mantri Jan Dhan Yojana",
+      "Jan Dhan",
+      "जन धन योजना",
+      "प्रधानमंत्री जन धन योजना",
+      "पीएम जन धन योजना"
+    ]
+  },
+  {
+    "scheme_id": "ATAL_PENSION_YOJANA",
+    "scheme_name": "Atal Pension Yojana (APY)",
+    "category": "Pension / Social Security",
+    "description": "Voluntary, contribution-based pension scheme administered by PFRDA for eligible Indian citizens seeking guaranteed minimum monthly pension after age 60.",
+    "benefits": [
+      "Subscribers choose a guaranteed minimum monthly pension of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000 or Rs. 5,000 after age 60.",
+      "The spouse is entitled to the same pension after the subscriber's death, subject to scheme rules.",
+      "After the death of both subscriber and spouse, the accumulated pension wealth is payable to the nominee under scheme rules."
+    ],
+    "eligibility": [
+      "Indian citizens aged 18 to 40 years with a savings bank or post-office savings account may join.",
+      "A person who is or has been an income-tax payer is not eligible to open a new APY account from 1 October 2022.",
+      "Contribution depends on joining age and selected pension amount."
+    ],
+    "documents": [
+      "Savings bank or post-office savings account details.",
+      "Completed APY registration form.",
+      "Aadhaar and mobile details as requested by the enrolling institution.",
+      "Spouse and nominee details where applicable."
+    ],
+    "application_process": [
+      "Approach the bank or post office holding the savings account.",
+      "Complete the APY registration form and select the pension amount.",
+      "Authorise periodic contributions from the linked account.",
+      "Alternatively, use the official eAPY enrolment facility where available."
+    ],
+    "official_url": "https://www.jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "APY",
+      "Atal Pension Yojana",
+      "अटल पेंशन योजना",
+      "एपीवाई"
+    ]
+  },
+  {
+    "scheme_id": "PMJJBY",
+    "scheme_name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "Life Insurance",
+    "description": "Renewable one-year term life insurance scheme providing life cover to eligible subscribing bank and post-office account holders.",
+    "benefits": [
+      "Life insurance cover of Rs. 2 lakh on the insured subscriber's death, subject to policy terms and exclusions.",
+      "The scheme is renewable annually for the cover period from 1 June to 31 May.",
+      "The published annual premium is Rs. 436; confirm the current premium and applicable tax or policy terms before enrolment."
+    ],
+    "eligibility": [
+      "Individual bank or post-office account holders aged 18 to 50 years may enrol.",
+      "The subscriber must provide consent and enable the prescribed auto-debit.",
+      "A person with multiple accounts can enrol through only one eligible account."
+    ],
+    "documents": [
+      "Eligible savings bank or post-office account.",
+      "Completed consent-cum-declaration or enrolment form.",
+      "Identity and nominee details requested by the participating institution."
+    ],
+    "application_process": [
+      "Apply through the participating bank branch, bank channel or post office.",
+      "Submit the prescribed consent and auto-debit authorisation.",
+      "Check enrolment confirmation and annual renewal status with the bank or post office."
+    ],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMJJBY",
+      "PM Jeevan Jyoti Bima Yojana",
+      "Jeevan Jyoti Bima",
+      "प्रधानमंत्री जीवन ज्योति बीमा योजना",
+      "जीवन ज्योति बीमा योजना"
+    ]
+  },
+  {
+    "scheme_id": "PMSBY",
+    "scheme_name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "category": "Accident Insurance",
+    "description": "Renewable one-year personal accident insurance scheme for eligible bank and post-office account holders.",
+    "benefits": [
+      "Accidental death or permanent total disability cover of Rs. 2 lakh.",
+      "Permanent partial disability cover of Rs. 1 lakh, subject to policy definitions.",
+      "The published annual premium is Rs. 20; confirm the current premium and policy terms before enrolment."
+    ],
+    "eligibility": [
+      "Individual bank or post-office account holders aged 18 to 70 years may enrol.",
+      "The applicant must provide consent and authorise auto-debit.",
+      "Only one account can be used for enrolment if the person has multiple accounts."
+    ],
+    "documents": [
+      "Eligible bank or post-office account details.",
+      "Completed PMSBY consent-cum-declaration or enrolment form.",
+      "Nominee details and identity information requested by the participating institution."
+    ],
+    "application_process": [
+      "Apply through the participating bank branch, bank channel or post office.",
+      "Provide consent and auto-debit authorisation.",
+      "Retain the acknowledgement and check annual renewal status."
+    ],
+    "official_url": "https://jansuraksha.gov.in/",
+    "source_title": "Jan Suraksha Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMSBY",
+      "PM Suraksha Bima Yojana",
+      "Suraksha Bima",
+      "प्रधानमंत्री सुरक्षा बीमा योजना",
+      "सुरक्षा बीमा योजना"
+    ]
+  },
+  {
+    "scheme_id": "PM_MUDRA",
+    "scheme_name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+    "category": "Micro-enterprise Finance",
+    "description": "Pradhan Mantri MUDRA Yojana provides institutional collateral-free credit to eligible micro-enterprises for income-generating business activities.",
+    "benefits": [
+      "Shishu loans cover requirements up to Rs. 50,000.",
+      "Kishor loans cover requirements above Rs. 50,000 and up to Rs. 5 lakh.",
+      "Tarun loans cover requirements above Rs. 5 lakh and up to Rs. 10 lakh.",
+      "Tarun Plus loans cover requirements above Rs. 10 lakh and up to Rs. 20 lakh for eligible borrowers who have successfully repaid a previous Tarun loan.",
+      "Loans are assessed and sanctioned by participating lending institutions; approval is not automatic."
+    ],
+    "eligibility": [
+      "Applicants must have a viable income-generating micro-enterprise proposal in manufacturing, trading, services or eligible allied agricultural activities.",
+      "Eligible applicants may include proprietorships, partnerships and other permitted micro-enterprise forms.",
+      "The lending institution assesses creditworthiness, business plan and repayment capacity."
+    ],
+    "documents": [
+      "Identity and address proof of applicant and business.",
+      "Business address and activity details.",
+      "Business plan, quotation or project report where requested.",
+      "Bank statements and financial information where requested by the lender.",
+      "Category-specific or registration documents where applicable."
+    ],
+    "application_process": [
+      "Approach a participating bank, NBFC or microfinance institution.",
+      "Discuss the appropriate loan category and submit the business proposal.",
+      "Alternatively, check the JanSamarth portal for an available online application route.",
+      "The lender evaluates the application and communicates its decision and terms."
+    ],
+    "official_url": "https://www.mudra.org.in/",
+    "source_title": "MUDRA Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMMY",
+      "MUDRA",
+      "MUDRA Yojana",
+      "PM Mudra",
+      "Mudra Loan",
+      "Pradhan Mantri MUDRA Yojana",
+      "प्रधानमंत्री मुद्रा योजना",
+      "मुद्रा योजना",
+      "पीएम मुद्रा योजना"
+    ]
+  },
+  {
+    "scheme_id": "PM_UJJWALA",
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "LPG / Clean Cooking",
+    "description": "PMUY supports eligible adult women from poor households to obtain a deposit-free LPG connection.",
+    "benefits": [
+      "Eligible beneficiaries receive a deposit-free LPG connection with specified equipment and installation charges covered under the scheme.",
+      "The connection package includes a cylinder, pressure regulator, safety hose and consumer booklet, subject to the selected connection type.",
+      "The scheme provides the applicable first refill and stove support under current PMUY rules.",
+      "The beneficiary may choose an eligible 14.2 kg or 5 kg connection option."
+    ],
+    "eligibility": [
+      "The applicant must be an adult woman aged 18 years or above.",
+      "The household must not already have an LPG connection in the name of a family member.",
+      "The applicant must belong to an eligible poor household and submit the prescribed deprivation declaration and supporting documents."
+    ],
+    "documents": [
+      "Applicant Aadhaar and completed KYC form.",
+      "Ration card or State-issued family-composition document.",
+      "Aadhaar details of adult family members listed in the family document.",
+      "Bank account passbook copy or cancelled cheque.",
+      "Address proof if the current address differs from Aadhaar address.",
+      "Prescribed deprivation declaration and migrant self-declaration where applicable."
+    ],
+    "application_process": [
+      "Apply through an LPG distributor of choice or the official PMUY online application facility.",
+      "Submit the KYC form, identity, address, family and bank details.",
+      "Submit the deprivation declaration and other applicable documents.",
+      "The LPG distributor and Oil Marketing Company verify the application before connection release."
+    ],
+    "official_url": "https://pmuy.gov.in/",
+    "source_title": "PMUY Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMUY",
+      "Ujjwala Yojana",
+      "PM Ujjwala",
+      "PM Ujjwala Yojana",
+      "Pradhan Mantri Ujjwala Yojana",
+      "प्रधानमंत्री उज्ज्वला योजना",
+      "उज्ज्वला योजना",
+      "पीएम उज्ज्वला योजना"
+    ]
+  },
+  {
+    "scheme_id": "PMFBY",
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture / Crop Insurance",
+    "description": "Pradhan Mantri Fasal Bima Yojana provides crop insurance for notified crops and areas against specified risks during notified crop seasons.",
+    "benefits": [
+      "The scheme provides insurance protection for notified crop losses caused by covered risks under the operational guidelines.",
+      "Covered risks can include prevented sowing, standing crop losses from specified non-preventable risks, and post-harvest losses in eligible cases.",
+      "Farmer premium rates are generally capped at 2% for Kharif food and oilseed crops, 1.5% for Rabi food and oilseed crops, and 5% for annual commercial and horticultural crops; State notifications and current guidelines apply.",
+      "Claim amounts depend on the insured crop, notified area, sum insured, assessed loss and applicable procedure."
+    ],
+    "eligibility": [
+      "Farmers growing notified crops in notified areas and having insurable interest may be covered.",
+      "Sharecroppers and tenant farmers may be eligible if they provide the required evidence permitted by the State notification.",
+      "Loanee and non-loanee farmer enrolment rules must be checked against the current season's notification and operational guidelines.",
+      "The crop, area, insurance window and cut-off date must be notified for the relevant season."
+    ],
+    "documents": [
+      "Aadhaar and bank account details.",
+      "Land record or Record of Rights, as applicable.",
+      "Sowing certificate or other crop evidence where required.",
+      "Lease, agreement or other insurable-interest evidence for tenant or sharecropper farmers, as permitted by the State.",
+      "Application and crop details for the notified season."
+    ],
+    "application_process": [
+      "Check whether the crop and area are notified for the relevant season on the PMFBY portal or through State agriculture authorities.",
+      "Apply within the notified cut-off date through the permitted bank, insurer, CSC or official online channel.",
+      "Submit crop, land or tenancy and bank details.",
+      "Report a covered loss within the prescribed time and procedure; retain acknowledgement and application details."
+    ],
+    "official_url": "https://pmfby.gov.in/",
+    "source_title": "PMFBY Official Portal",
+    "last_verified": "2026-11-15",
+    "verification_status": "official_sources_reviewed_check_current_state_and_scheme_notifications",
+    "pdf_path": "",
+    "aliases": [
+      "PMFBY",
+      "PM Fasal Bima Yojana",
+      "Fasal Bima",
+      "Crop Insurance Scheme",
+      "Pradhan Mantri Fasal Bima Yojana",
+      "प्रधानमंत्री फसल बीमा योजना",
+      "फसल बीमा योजना",
+      "पीएम फसल बीमा योजना"
+    ]
+  }
+]
